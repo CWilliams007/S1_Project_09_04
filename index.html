@@ -18,7 +18,9 @@
     <title>Millennium Computers | Lightning Fast PC'S at Great Prices</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="mc_forms.css">
+    <link rel="stylesheet" href="mc_styles.css">
+    <script src="mc_script.js"></script>
 </head>
 
 <body>
@@ -26,7 +28,44 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <script src="" async defer></script>
+    <div class="navContainer">
+        <!-- empty div, displays logo -->
+        <div class="logoImage">
+        </div>
+        <!-- div container for nav, used for background color -->
+        <div class="linkContainer">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Purchase</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+
+    </div>
+    <!-- holds heroimage, uses background image, with button and heading -->
+    <div class="heroImage">
+        <div class="heroText">
+            <h1>Millennium Computers</h1>
+            <p>Get a PC at a great price</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+    <!-- maincontent container div -->
+
+    <div class="mainContent">
+        <div class="lwhiteSpace">
+            <p>aa
+            </p>
+        </div>
+        <div class="contentContainer">
+            <p>aaaa</p>
+            <form action="http://www.mill_computers.com/orders/process.cgi" name="cForm" method="POST"></form>
+        </div>
+        <div class="rwhiteSpace">
+            <p>aaaa</p>
+        </div>
+    </div>
 </body>
 
 </html>
