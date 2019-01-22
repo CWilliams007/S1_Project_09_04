@@ -5,24 +5,35 @@
     Purpose: To act as the main CSS file.
 */
 
-body,
 html {
     height: 100%;
+    border-left: black solid 3px;
+    box-shadow: -20px 0px 10px black, 20px 0px 10px black;
+    border-right: black solid 3px;
+}
+
+body {
+    height: auto;
+    border-left: black solid 3px;
+    box-shadow: -20px 0px 10px black, 20px 0px 10px black;
+    border-right: black solid 3px;
+    margin: 0px auto;
 }
 
 .navContainer {
     display: grid;
     grid-template-columns: .25fr 1fr;
+
 }
 
 .linkContainer {
-    background-color: gray;
+    background-color: whitesmoke;
 }
 
 nav {
-    background-color: gray;
+    background-color: whitesmoke;
     position: relative;
-    top: 85%;
+    top: 75%;
     text-align: center;
 }
 
@@ -32,17 +43,18 @@ a {
     margin: 0px 35px;
     background-color: whitesmoke;
     font-size: 1.1em;
-    color: black;
+    color: rgb(50, 50, 50);
     text-decoration: none;
     text-align: center;
     position: relative;
-    top: 85%;
+    box-shadow: 2px 5px 4px;
 }
 
 a:hover,
 a:active {
     color: whitesmoke;
-    background-color: black;
+    background-color: rgb(50, 50, 50);
+    box-shadow: 2px 5px 4px black;
 }
 
 .logoImage {
@@ -57,31 +69,36 @@ a:active {
     position: relative;
 }
 
-
+/* Hero Styles */
 /* The hero image */
 .heroImage {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("beverage-coffee-computer-877695.jpg");
-
     /* Set a specific height */
-    height: 50%;
-
+    height: 500px;
+    width: 100%;
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
 }
 
 /* Place text in the middle of the image */
 .heroText {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 500px;
+    height: 200px;
     transform: translate(-50%, -50%);
     color: white;
 }
+
+/* Hero Styles */
 
 /* maincontent styles */
 .mainContent {
@@ -89,8 +106,16 @@ a:active {
     grid-template-columns: .25fr 1fr .25fr;
 }
 
+.contentContainer {
+    margin-top: 10px;
+    height: 100%;
+}
+
 /* Whitespace Styles */
+.rwhiteSpace {
+    background-color: whitesmoke;
+}
+
 .lwhiteSpace {
-    border-left: black solid 3px;
-    box-shadow: -20px 0px 10px black;
+    background-color: whitesmoke;
 }
