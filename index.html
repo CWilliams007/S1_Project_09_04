@@ -55,15 +55,16 @@
     <!-- maincontent container div -->
 
     <div class="mainContent">
+        <!-- Empty Div, seperating mainContent into 3 grids -->
         <div class="lwhiteSpace">
         </div>
-        <div class="contentContainer">
 
+        <div class="contentContainer">
             <form action="http://www.mill_computers.com/orders/process.cgi" name="cForm" method="POST">
                 <!-- survery 1 -->
                 <fieldset id="pcInfo">
                     <legend>PC Specs</legend>
-                    <div>
+                    <div class="form">
                         <label for="pSpeed">Processor</label>
                         <select name="pSpeed" id="pSpeed">
                             <option value="3.2ghz">3.2GHz</option>
@@ -71,7 +72,7 @@
                             <option value="5.2ghz">5.2GHz</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="form">
                         <label for="mem">Memory</label>
                         <select name="mem" id="mem">
                             <option value="1gb">1GB</option>
@@ -80,7 +81,7 @@
                             <option value="8gb">8GB</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="form">
                         <label for="monitor">Monitor</label>
                         <select name="monitor" id="monitor">
                             <option value="15in">15"</option>
@@ -89,9 +90,9 @@
                             <option value="21in">21"</option>
                         </select>
                     </div>
-                    <div>
-                        <label for="monitor">Monitor</label>
-                        <select name="monitor" id="monitor">
+                    <div class="form">
+                        <label for="hd">Storage</label>
+                        <select name="hd" id="hd">
                             <option value="240GB">240GB</option>
                             <option value="500GB">500GB</option>
                             <option value="750GB">750GB</option>
@@ -99,60 +100,52 @@
                         </select>
                     </div>
 
-                    <div>
+                    <div class="form">
                         <label>DVD Burner (CDW-R)</label>
                         <fieldset class="optgroup">
-                            <label for="dvdYes">Yes</label>
-                            <input name="sFriend" id="fYes" value="yes" type="radio">
-                            <label for="dvdNo">No</label>
-                            <input name="sFriend" id="fNo" value="no" type="radio">
+                            <label for="dvdYes">Check To Add</label>
+                            <input name="dvd" id="fYes" value="yes" type="checkbox">
                         </fieldset>
                     </div>
-                    <div>
+                    <div class="form">
                         <label>Tuner Card</label>
                         <fieldset class="optgroup">
-                            <label for="tunerYes">Yes</label>
-                            <input name="sFriend" id="tunerYes" value="yes" type="radio">
-                            <label for="tunerNo">No</label>
-                            <input name="sFriend" id="tunerNo" value="no" type="radio">
+                            <label for="tunerYes">Check To Add</label>
+                            <input name="tuner" id="tunerYes" value="yes" type="checkbox">
                         </fieldset>
                     </div>
-                    <div>
+                    <div class="form">
                         <label>Media Card Reader</label>
                         <fieldset class="optgroup">
-                            <label for="mcardYes">Yes</label>
-                            <input name="sFriend" id="mcardYes" value="yes" type="radio">
-                            <label for="mcardNo">No</label>
-                            <input name="sFriend" id="mcardNo" value="no" type="radio">
+                            <label for="mcardYes">Check To Add</label>
+                            <input name="sFriend" id="mcardYes" value="yes" type="checkbox">
                         </fieldset>
                     </div>
-
-
                 </fieldset>
 
                 <!-- survey 2 -->
                 <fieldset id="custInfo">
                     <legend>Customer Information</legend>
-                    <div>
+                    <div class="form">
                         <label for="fName">First Name*</label>
                         <input name="fName" id="fName" type="text" placeholder="First Name" required>
                     </div>
 
-                    <div>
+                    <div class="form">
                         <!-- Collects last names, uses lName as id; required -->
                         <label for="lName">Last Name*</label>
                         <input name="lName" id="lName" type="text" placeholder="Last Name" required>
                     </div>
-                    <div>
+                    <div class="form">
                         <label for="street">Street*</label>
                         <input name="street" id="street" type="text">
                     </div>
-                    <div>
+                    <div class="form">
                         <label for="city">City*</label>
                         <input name="city" id="city" type="text" value="Ormond Beach">
                     </div>
                     <br>
-                    <div>
+                    <div class="form">
                         <label for="state">State*</label>
                         <select>
                             <option value="AL">Alabama</option>
@@ -208,17 +201,17 @@
                             <option value="WY">Wyoming</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="form">
                         <label for="zip">Zip*</label>
                         <input name="zip" id="zip" type="text" placeholder="nnnnn (-nnnnn)" pattern="^\d{5}(-\d{4})?$">
                     </div>
 
-                    <div>
+                    <div class="form">
                         <!-- Input for emails, required, uses type email. -->
                         <label for="mailBox">Email*</label>
                         <input name="email" id="mailBox" type="email" required>
                     </div>
-                    <div>
+                    <div class="form">
                         <!-- phone number input and lable, uses placeholder and pattern character code to ensure correct data is entered 
                         in format provided -->
                         <label for="phoneBox">Phone Number*</label>
@@ -227,15 +220,20 @@
                 </fieldset>
 
                 <div id="buttons">
-                    <input type="submit" value="Submit My Survey">
+                    <input type="submit" value="Submit">
                     <input type="reset" value="Cancel">
                 </div>
             </form>
         </div>
 
+        <!-- Empty Div, seperating mainContent into 3 grids -->
         <div class="rwhiteSpace">
         </div>
     </div>
+
+    <footer>
+        <a id="footerlink" href="#">Chad Williams</a>
+    </footer>
 </body>
 
 </html>

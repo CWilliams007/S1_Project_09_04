@@ -8,7 +8,6 @@
 html {
     height: 100%;
     border-left: black solid 3px;
-    box-shadow: -20px 0px 10px black, 20px 0px 10px black;
     border-right: black solid 3px;
 }
 
@@ -109,6 +108,7 @@ a:active {
 .contentContainer {
     margin-top: 10px;
     height: 100%;
+    border-radius: 10px;
 }
 
 /* Whitespace Styles */
@@ -118,4 +118,14 @@ a:active {
 
 .lwhiteSpace {
     background-color: whitesmoke;
+}
+
+footer {
+    background: gray;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#footerlink {
+    margin-bottom: 10px;
 }
